@@ -1,0 +1,26 @@
+%h1 Listing posts
+
+%table
+  %tr
+    %th Author
+    %th Title
+    %th Story
+    %th Rating
+    %th
+
+  - @posts.each do |post|
+    %tr
+      %td= on_the_spot_edit post, :author
+      %td= post.title
+      %td= on_the_spot_edit post, :story, :type => 'textarea', :tooltip => 'Click to write story ...'
+      %td= post.rating
+      %td
+        = link_to 'Show', post
+        |
+        = link_to 'Edit', edit_post_path(post)
+        |
+        = link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New post', new_post_path
