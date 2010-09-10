@@ -26,7 +26,7 @@ body {
   #banner h1 {
     float: left;
     text-align: right;
-    background: url("/images/sms_logo_sm.png") no-repeat;
+    background: url("/images/logo_sm.png") no-repeat;
     height: 100px;
     width: 407px;
     margin-left: 15px; }
