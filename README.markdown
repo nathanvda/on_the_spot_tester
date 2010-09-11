@@ -2,7 +2,7 @@
 
 On-the-spot is a Rails3 application with the only intention to test and show the possible use of the on_the_spot gem.
 
-For more information about the gem, see http://github.com/nathanvda/on_the_spot
+For more information about the gem, see the [repository](http://github.com/nathanvda/on_the_spot)
 
 ## Instructions
 
