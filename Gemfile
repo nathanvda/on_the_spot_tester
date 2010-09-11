@@ -16,7 +16,9 @@ gem "jquery-rails"
 
 gem "rcov"
 
-gem "on_the_spot", ">= 0.0.0.beta1", :path => "../on_the_spot"
+gem "on_the_spot", ">=0.0.1"                                                         # use latest gem
+#gem "on_the_spot", ;git => "git://github.com/nathanvda/on_the_spot.git"   # use gem from github
+#gem "on_the_spot", ">= 0.0.0.beta1", :path => "../on_the_spot"             # for local testing
 
 # we need this here, see http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
 group :development, :test do
