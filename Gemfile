@@ -16,7 +16,7 @@ gem "jquery-rails"
 
 gem "rcov"
 
-gem "on_the_spot", ">=0.0.1"                                                         # use latest gem
+gem "on_the_spot", ">=0.0.2"                                                         # use latest gem
 #gem "on_the_spot", ;git => "git://github.com/nathanvda/on_the_spot.git"   # use gem from github
 #gem "on_the_spot", ">= 0.0.0.beta1", :path => "../on_the_spot"             # for local testing
 
