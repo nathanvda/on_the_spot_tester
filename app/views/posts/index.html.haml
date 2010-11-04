@@ -6,6 +6,7 @@
     %th Title
     %th Story
     %th Rating
+    %th Test capitalized
     %th
 
   - @posts.each do |post|
@@ -14,6 +15,7 @@
       %td= post.title
       %td= on_the_spot_edit post, :story, :type => :textarea, :tooltip => 'Click to write story ...'
       %td= on_the_spot_edit post, :rating, :type => :select, :data => [[0, "Not rated"], [1, "Worse than bad"], [2, "Bad"], [3, "Mediocre"], [4, "Not bad"], [5, "Good"], [6, "Awesome"], [7, "Photoshopped!!"]]
+      %td= on_the_spot_edit post, :test_capitalized
       %td
         = link_to 'Show', post
         |

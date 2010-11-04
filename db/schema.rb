@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100903204914) do
+ActiveRecord::Schema.define(:version => 20101104205754) do
 
   create_table "posts", :force => true do |t|
     t.string   "author"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100903204914) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "test_capitalized"
   end
 
 end
