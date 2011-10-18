@@ -4,7 +4,15 @@ gem 'rails', '>= 3.0.0'
 
 gem 'therubyracer'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0.rc"
+  gem 'coffee-rails', "~> 3.1.0.rc"
+  gem 'uglifier'
+end
 
 gem 'rails3-generators'
 
@@ -12,10 +20,11 @@ gem "bson_ext"
 gem "haml"
 gem "haml-rails"
 gem "jquery-rails"
+gem "sprockets"
 
-gem "rcov"
+#gem "rcov"
 
-gem "on_the_spot", ">=0.0.5"                                                         # use latest gem
+gem "on_the_spot"                                                    # use latest gem
 #gem "on_the_spot", ;git => "git://github.com/nathanvda/on_the_spot.git"   # use gem from github
 #gem "on_the_spot", ">= 0.0.0.beta1", :path => "../on_the_spot"             # for local testing
 
