@@ -1,3 +1,9 @@
+PATH
+  remote: ../on_the_spot
+  specs:
+    on_the_spot (0.0.17)
+      json_pure (>= 1.4.6)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -30,7 +36,7 @@ GEM
     activesupport (3.1.1)
       multi_json (~> 1.0)
     arel (2.2.1)
-    bson_ext (1.4.1)
+    bson_ext (1.5.1)
     builder (3.0.0)
     capybara (1.1.1)
       mime-types (>= 1.16)
@@ -92,8 +98,6 @@ GEM
     mime-types (1.16)
     multi_json (1.0.3)
     nokogiri (1.5.0)
-    on_the_spot (0.0.16)
-      json_pure (>= 1.4.6)
     polyglot (0.3.2)
     rack (1.3.5)
     rack-cache (1.1)
@@ -191,7 +195,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
-  on_the_spot
+  on_the_spot (>= 0.0.0.beta1)!
   rails (>= 3.0.0)
   rails3-generators
   remarkable (>= 4.0.0.alpha2)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101104205754) do
+ActiveRecord::Schema.define(:version => 20111211203048) do
 
   create_table "posts", :force => true do |t|
     t.string   "author"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(:version => 20101104205754) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "test_capitalized"
+    t.boolean  "enabled"
+    t.text     "large_text"
   end
 
 end

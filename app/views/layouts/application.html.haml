@@ -9,18 +9,24 @@
 
     = csrf_meta_tag
 
-    = yield :local_javascript
+  %body{:style => 'padding-top: 40px;'}
+    .topbar
+      .topbar-inner
+        .container
+          %h3
+            = link_to "On the spot Tester", root_url
+          %ul.nav
+            %li
+              =link_to "Home", root_url
+            %li
+              =link_to "About", root_url
+    .container
+      = yield
+      %footer
+        == &copy; 2010
 
-    = yield :head
-  %body
-    #banner
-      .the-title
-        %h1
-          %p On The Spot Tester
-    #container
-      #sidebar
-      #contents
-        =yield
-    #footer
-      == &copy; 2010
+
+
+
+
 

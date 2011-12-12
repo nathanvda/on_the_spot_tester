@@ -1,15 +1,35 @@
-%p
-  %b Author:
-  = on_the_spot_edit @post, :author
-%p
-  %b Title:
-  = @post.title
-%p
-  %b Story:
-  = @post.story
-%p
-  %b Rating:
-  = @post.rating
+
+%h2
+  Show the post
+  %small and edit some parts you really want to
+
+%table.editable
+  %tr
+    %td
+      %b Author:
+    %td= on_the_spot_edit @post, :author
+  %tr
+    %td
+      %b Title:
+    %td= @post.title
+  %tr
+    %td
+      %b Story:
+    %td= @post.story
+  %tr
+    %td
+      %b Rating:
+    %td= @post.rating
+  %tr
+    %td
+      %b Enabled:
+    %td= on_the_spot_edit @post, :enabled, :type => :checkbox
+  %tr
+    %td
+      %b Large (formatted) text:
+    %td= on_the_spot_edit @post, :large_text, :type => :textarea, :display_method => :formatted_text
+
+
 
 = link_to 'Edit', edit_post_path(@post)
 \|

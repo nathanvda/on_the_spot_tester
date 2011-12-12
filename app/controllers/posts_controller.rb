@@ -23,6 +23,13 @@ class PostsController < ApplicationController
     end
   end
 
+  def large_text
+    klass,field,id = params[:id].split('__')
+    @post = Post.find(id)
+
+    render :text => @post.large_text
+  end
+
   # GET /posts/new
   # GET /posts/new.xml
   def new
