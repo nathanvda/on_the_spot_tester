@@ -22,7 +22,6 @@ gem "haml-rails"
 gem "jquery-rails"
 gem "sprockets"
 
-#gem "rcov"
 
 gem "on_the_spot"                                                    # use latest gem
 #gem "on_the_spot", ;git => "git://github.com/nathanvda/on_the_spot.git"   # use gem from github
@@ -31,6 +30,7 @@ gem "on_the_spot"                                                    # use lates
 # we need this here, see http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0"
+  gem "version"
 end
 
 # test-environment gems

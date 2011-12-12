@@ -5,3 +5,10 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 OnTheSpotTester::Application.load_tasks
+
+if Rails.env.development?
+  require 'rake/version_task'
+  Rake::VersionTask.new do |task|
+    task.with_git_tag = true
+  end
+end

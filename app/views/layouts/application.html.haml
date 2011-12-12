@@ -19,11 +19,19 @@
             %li
               =link_to "Home", root_url
             %li
-              =link_to "About", root_url
+              =link_to "About", about_path
     .container
       = yield
-      %footer
-        == &copy; 2010
+      %footer.footer
+        .container
+          %p
+            On_the_spot is a
+            = link_to '@dixis', 'http://twitter.com/dixis'
+            realisation.
+            %br
+            = "&copy; 2011".html_safe
+            |
+            = app_version
 
 
 

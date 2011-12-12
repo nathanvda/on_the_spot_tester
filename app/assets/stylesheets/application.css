@@ -54,3 +54,8 @@ table.editable {
 .editable form > button:focus {
   outline: 1px dotted #666;
 }
+
+.footer {
+    font-size: 80%;
+    color: gray;
+}
